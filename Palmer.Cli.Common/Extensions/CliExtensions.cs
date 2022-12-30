@@ -1,4 +1,4 @@
-namespace Palmer.Cli.Extensions;
+namespace Palmer.Cli.Common.Extensions;
 
 public static class CliExtensions {
 

@@ -1,7 +1,7 @@
 using System.Text.Json;
-using Palmer.Cli.Extensions;
+using Palmer.Cli.Common.Extensions;
 
-namespace Palmer.Cli.Json
+namespace Palmer.Cli.Common.Json
 {
     public class SnakeCaseNamingPolicy : JsonNamingPolicy
     {

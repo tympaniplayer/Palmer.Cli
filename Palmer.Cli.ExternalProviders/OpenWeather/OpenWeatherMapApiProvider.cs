@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Palmer.Cli.Common.Json;
 using Palmer.Cli.ExternalProviders.OpenWeather.Response;
-using Palmer.Cli.Json;
 
 namespace Palmer.Cli.ExternalProviders.OpenWeather;
 
