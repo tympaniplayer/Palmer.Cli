@@ -1,7 +1,5 @@
 using CommandDotNet.TestTools;
-using CommandDotNet.TestTools.Scenarios;
 using FluentAssertions;
-using System;
 using Xunit;
 using CommandDotNet;
 

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palmer.Cli", "Palmer.Cli\Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palmer.Cli.Tests", "Palmer.Cli.Tests\Palmer.Cli.Tests.csproj", "{99A61CAF-CF3A-462A-B132-F8357429DFB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palmer.Cli.ExternalProviders", "Palmer.Cli.ExternalProviders\Palmer.Cli.ExternalProviders.csproj", "{0A59B47D-AE91-4311-A321-872D647ABBA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palmer.Cli.Common", "Palmer.Cli.Common\Palmer.Cli.Common.csproj", "{0768F437-7625-4BD2-829B-8056D299D388}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{99A61CAF-CF3A-462A-B132-F8357429DFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99A61CAF-CF3A-462A-B132-F8357429DFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99A61CAF-CF3A-462A-B132-F8357429DFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A59B47D-AE91-4311-A321-872D647ABBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A59B47D-AE91-4311-A321-872D647ABBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A59B47D-AE91-4311-A321-872D647ABBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A59B47D-AE91-4311-A321-872D647ABBA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0768F437-7625-4BD2-829B-8056D299D388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0768F437-7625-4BD2-829B-8056D299D388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0768F437-7625-4BD2-829B-8056D299D388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0768F437-7625-4BD2-829B-8056D299D388}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

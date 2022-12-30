@@ -9,6 +9,13 @@
 
   <ItemGroup>
     <PackageReference Include="CommandDotNet" Version="7.0.2" />
+    <PackageReference Include="CommandDotNet.IoC.MicrosoftDependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Palmer.Cli.ExternalProviders\Palmer.Cli.ExternalProviders.csproj" />
   </ItemGroup>
 
 </Project>
