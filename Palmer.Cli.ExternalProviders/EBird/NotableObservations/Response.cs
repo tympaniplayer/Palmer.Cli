@@ -4,7 +4,7 @@ public record Response(
     string Name,
     string LocationName,
     DateTime DateTime,
-    string HowMany,
+    int HowMany,
     bool IsValid,
     bool IsReviewed,
     bool IsPrivateLocation,

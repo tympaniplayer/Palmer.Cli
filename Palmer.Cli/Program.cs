@@ -37,21 +37,25 @@ public sealed class Program
     private static IServiceProvider ConfigureMicrosoftServiceProvider()
     {
         var ebird = Environment.GetEnvironmentVariable("ebird");
-        var openapi
         if (ebird is null)
         {
             throw new InvalidOperationException("ebird environment variable must be set");
         }
         var serviceCollection = new ServiceCollection();
-        serviceCollection.AddScoped<Program>();
-        serviceCollection.AddScoped<IWeatherCommand, WeatherCommand>();
-        serviceCollection.AddScoped<IOpenWeatherMapApiProvider, OpenWeatherMapApiProvider>();
-        serviceCollection.AddHttpClient(OpenWeatherMapApiProvider.HttpClientName, 
-            client =>
-            {
-                client.BaseAddress = new Uri(OpenWeatherMapBaseUri);
-            });
-        serviceCollection.AddHttpClient(Configuration.EBirdHttpClient,
+        serviceCollection.AddScoped<Program>()
+            .AddScoped<IWeatherCommand, WeatherCommand>()
+            .AddScoped<IOpenWeatherMapApiProvider, OpenWeatherMapApiProvider>()
+            .AddMediatR(o =>
+                o.RegisterServicesFromAssemblyContaining<ExternalProviders.EBird.NotableObservations.Handler>());
+            
+        serviceCollection
+            .AddHttpClient(OpenWeatherMapApiProvider.HttpClientName,
+                client =>
+                {
+                    client.BaseAddress = new Uri(OpenWeatherMapBaseUri);
+                });
+        serviceCollection
+            .AddHttpClient(ClientConfiguration.EBirdHttpClient,
             client =>
             {
                 client.BaseAddress = new Uri(EBirdBaseUri);
